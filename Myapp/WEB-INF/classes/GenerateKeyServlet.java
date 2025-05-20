@@ -20,8 +20,7 @@ public class GenerateKeyServlet extends HttpServlet {
 
         if (fname != null && fname.length() >= 2) {
             String key = fname.substring(0, 2).toUpperCase();
-            
-            // Format date as ddMMyyyy
+
             SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy");
             String date = sdf.format(new Date());
 
